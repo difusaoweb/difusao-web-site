@@ -1,0 +1,24 @@
+@import '../../../styles/_globals.module';
+
+.section {
+  background-color: $primary-color;
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .divDivider {
+    .divider {
+      border-bottom-color: $white-color;
+    }
+  }
+
+  .h2,
+  .p {
+    color: $white-color;
+  }
+  .p {
+    margin-bottom: 15px;
+  }
+}

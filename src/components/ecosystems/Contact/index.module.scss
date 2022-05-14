@@ -1,0 +1,19 @@
+@import '../../../styles/_globals.module';
+
+.section {
+  .iconDiv {
+    min-width: 45px;
+    @media screen and (min-width: $desktopWidth) {
+      font-size: 55px;
+    }
+
+    .icon {
+      font-size: 30px;
+      color: $secondary-color;
+
+      @media screen and (min-width: $desktopWidth) {
+        font-size: 40px;
+      }
+    }
+  }
+}

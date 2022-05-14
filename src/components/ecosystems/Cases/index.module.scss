@@ -1,0 +1,21 @@
+@import '../../../styles/_globals.module';
+
+.section {
+  background-color: $primary-color;
+
+  .h2 {
+    color: $white-color;
+  }
+  .divDivider {
+    margin-bottom: 15px;
+
+    .divider {
+      border-bottom-color: $white-color;
+    }
+  }
+  .p {
+    color: $white-color;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}

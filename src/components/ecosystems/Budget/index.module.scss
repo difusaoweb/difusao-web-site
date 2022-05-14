@@ -1,0 +1,11 @@
+@import '../../../styles/_globals.module';
+
+.section {
+  background-color: $secondary-color;
+
+  .container {
+    .h2 {
+      margin-bottom: 30px;
+    }
+  }
+}

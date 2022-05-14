@@ -1,0 +1,33 @@
+@import '../../../styles/_globals.module';
+
+.header {
+  background-color: #fff;
+
+  .divLogo {
+    flex-grow: 1;
+  }
+  .divMenuMobile {
+    flex-grow: 0;
+
+    .iconMenu {
+      color: $secondary-color;
+    }
+    .menu {
+      .a {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .divMenuDesktop {
+    flex-grow: 0;
+
+    .a {
+      color: $secondary-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../../styles/_globals.module';
+
+.section {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+
+  .BackgoundOpacity {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .container {
+    z-index: 2;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .h1 {
+      .span {
+        color: $primary-color;
+      }
+    }
+
+    .button {
+      background-color: $primary-color;
+      font-size: $font-size;
+      padding: 6px 20px;
+      border-radius: 10px;
+      border: 1px solid;
+      text-transform: none;
+
+      @media screen and (min-width: $desktopWidth) {
+        font-size: $font-size-desktop;
+        padding: 12px 40px;
+      }
+    }
+  }
+}

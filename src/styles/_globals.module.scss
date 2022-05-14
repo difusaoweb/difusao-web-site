@@ -1,0 +1,155 @@
+$font-family: Roboto;
+$font-family-heading: 'Barlow Condensed';
+
+$font-size: 12px;
+$font-size-desktop: 16px;
+$font-size-h1: 50px;
+$font-size-h1-desktop: 80px;
+$font-size-h2: 30px;
+$font-size-h2-desktop: 40px;
+$font-size-h3: 20px;
+$font-size-h3-desktop: 32px;
+
+$font-weight: 400;
+$font-weight-heading: 500;
+
+$primary-color: #857dcc;
+$secondary-color: #000015;
+$white-color: #fff;
+$typography-default-color: #181924;
+$float-button-background-color: #25d366;
+$float-button-background-color-hover: #128c7e;
+
+.section {
+  padding: 64px 0;
+}
+.h1 {
+  margin-bottom: 45px;
+  font-family: $font-family-heading;
+  font-size: $font-size-h1;
+  font-weight: $font-weight-heading;
+  color: $white-color;
+}
+.h2 {
+  font-family: $font-family-heading;
+  font-size: $font-size-h2;
+  font-weight: $font-weight-heading;
+  color: $primary-color;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.h3 {
+  color: $secondary-color;
+  text-align: center;
+  font-family: $font-family-heading;
+  font-size: $font-size-h3;
+  font-weight: $font-weight-heading;
+}
+.divDivider {
+  display: flex;
+  text-align: center;
+  margin-bottom: 50px;
+
+  .divider {
+    border-bottom-width: 2px;
+    border-style: dashed;
+    border-bottom-color: $secondary-color;
+    width: 30%;
+  }
+}
+.p {
+  color: $typography-default-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+.footer {
+  background-color: $primary-color;
+  padding: 20px 0;
+  text-align: center;
+
+  .p {
+    color: $white-color;
+  }
+}
+.a {
+  color: $primary-color;
+  text-transform: none;
+  text-decoration: none;
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.button {
+  color: $white-color;
+  background-color: $primary-color;
+  border: 1px solid $white-color;
+  text-transform: none;
+  text-decoration: none;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  padding: 6px 20px;
+  border-radius: 10px;
+
+  &:hover {
+    color: $primary-color;
+    background-color: $secondary-color;
+    border-color: $primary-color;
+  }
+}
+.floatButton {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2000;
+  background-color: $float-button-background-color;
+  &:hover {
+    background-color: $float-button-background-color-hover;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+}
+
+$tabletWidth: 768px;
+$desktopWidth: 900px;
+
+// @media screen and (min-width: $tabletWidth) {
+//   //do Smth
+// }
+@media screen and (min-width: $desktopWidth) {
+  .a {
+    font-size: $font-size-desktop;
+  }
+  .p {
+    font-size: $font-size-desktop;
+  }
+  .h1 {
+    font-size: $font-size-h1-desktop;
+  }
+  .h2 {
+    font-size: $font-size-h2-desktop;
+  }
+  .h3 {
+    font-size: $font-size-h3-desktop;
+  }
+  .button {
+    padding: 12px 40px;
+    font-size: $font-size-desktop;
+  }
+  .floatButton {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  whiteColor: $white-color;
+  typographyDefaultColor: $typography-default-color;
+}
